@@ -1,6 +1,7 @@
 <div>
-  <h1>
-    {{this.title}}
-    <img  [src]="imageUrl" (click)="onClick($event)" alt="#Briglabz logo">
-  </h1>
+  <h1>Hello {{this.userName}} from Bridgelabz</h1>
+  <img [src]="imageUrl" (click)="onClick($event)" alt="#Briglabz logo">
+</div>
+<div>
+  <input [(ngModel)]="userName"/>
 </div>
