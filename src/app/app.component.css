@@ -9,3 +9,10 @@ img{
   margin: 0 auto;
   width: 25%;
 }
+
+.error-output {
+  margin-left:  10px;
+  font-size:  20px;
+  font-style:italic;
+  color: red;
+}

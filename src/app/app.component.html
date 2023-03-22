@@ -1,7 +1,12 @@
 <div>
+  <!-- Title with username by One Way Data Binding -->
   <h1>Hello {{this.userName}} from Bridgelabz</h1>
+  <!-- added logo by Property Binding -->
   <img [src]="imageUrl" (click)="onClick($event)" alt="#Briglabz logo">
 </div>
 <div>
-  <input [(ngModel)]="userName"/>
+  <!-- valid Username to be input by User  -->
+  <input (input)="onInput($event)" [(ngModel)]="userName"/>
+  <!-- if not valid then it will show error -->
+  <span class=error-output>{{this.nameError}}</span>
 </div>
